@@ -5,6 +5,7 @@ workflows:
   build:
     jobs:
       - build
+      - print_hello
 
 jobs:
   print_hello:

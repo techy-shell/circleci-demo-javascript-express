@@ -7,6 +7,14 @@ workflows:
       - build
 
 jobs:
+  print_hello:
+  docker:
+    - image: circleci/node:13.8.0
+  steps:
+    - checkout
+    - run:
+        name: "print the work hello"
+        command: "echo hello"
   build:
     working_directory: ~/mern-starter
     docker:
